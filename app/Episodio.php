@@ -19,17 +19,17 @@ class Episodio extends Model
         return $valor;
     }
 
-    public function getTemporadaAttribute($valor) : int
+    public function getTemporadaAttribute($xpto) : int
     {
-        return $valor;
+        return $xpto;
     }
 
-    public function getNumeroAttribute($valor)
+    public function getNumeroAttribute(int $numero): string
     {
-        return (int) $valor;
+        return '#' . $numero;
     }
 
-    public function getSerieIdAttribute(int $valor)
+    public function getSerieIdAttribute(int $valor): int
     {
         return $valor;
     }
