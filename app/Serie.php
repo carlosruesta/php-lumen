@@ -8,6 +8,7 @@ class Serie extends Model
 {
     public $timestamps = false;
     protected $fillable = ['nome'];
+    protected $perPage = 3;
 
     public function episodios()
     {
@@ -16,6 +17,6 @@ class Serie extends Model
 
     public function getNomeAttribute($nome): string
     {
-        return strtoupper($this->nome);
+        return strtoupper($nome);
     }
 }
