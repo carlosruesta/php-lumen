@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Episodio;
+use App\Models\Episodio;
 use Illuminate\Database\Eloquent\Collection;
 
 class EpisodiosController extends BaseController
